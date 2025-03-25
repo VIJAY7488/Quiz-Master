@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../components/Navbar";
 import RegisterForm from "../components/auth/RegisterForm";
 import { Link } from "react-router-dom";
