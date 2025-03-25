@@ -66,8 +66,8 @@ const RegisterForm = () => {
               Email
             </InputLabel>
             <OutlinedInput
-              id="eamil"
-              name="eamil"
+              id="email"
+              name="email"
               type="email"
               placeholder="Enter your email"
               value={formData.email}
