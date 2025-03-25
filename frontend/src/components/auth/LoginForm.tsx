@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { toast } from "react-toastify";
 
-const Login = () => {
+const LoginForm = () => {
   const initialState = {
     email: "",
     password: "",
@@ -113,4 +113,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginForm;
