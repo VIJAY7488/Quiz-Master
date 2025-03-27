@@ -4,6 +4,7 @@ const path = require('path');
 const { PORT, URI } = require('./config');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
+const authRouter = require('./routes/authRoutes');
 
 
 const app = express();
@@ -26,6 +27,9 @@ app.use(cors({
 mongoose.connect(URI)
 .then(() => console.log("DB is connected successfully"))
 .catch((error) => console.log(error))
+
+//API Endpoint
+app.use('/api/v1', authRouter);
 
 
 app.use(express.static(path.join(_dirname, "/frontend/dist")));
